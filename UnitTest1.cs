@@ -29,9 +29,9 @@ namespace EmailApiTestProject
             var request = new RestRequest("/messages", Method.Post);
 
             request.AddParameter("from", "Yujin <mailgun@sandbox8429c838ba4a430cb31c1b02daf3b7dd.mailgun.org>");
-            request.AddParameter("to", "aso23456@gmail.com");
-            request.AddParameter("subject", "Mailgun API Å×½ºÆ®");
-            request.AddParameter("text", "Yujin's first Mailgun automated email!");
+            request.AddParameter("to", "");
+            request.AddParameter("subject", "Mailgun API");
+            request.AddParameter("text", "Yujin's first Mailgun automated email.");
 
             var response = await client.ExecuteAsync(request);
             Console.WriteLine("Response content: " + response.Content);
